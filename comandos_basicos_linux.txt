@@ -1,0 +1,54 @@
+ls: lista los archivos y directorios en el directorio actual.
+cd: cambia el directorio actual.
+mkdir: crea un nuevo directorio.
+rm: elimina archivos y directorios.
+cp: copia archivos y directorios.
+mv: mueve o renombra archivos y directorios.
+cat: muestra el contenido de un archivo en la pantalla.
+grep: busca texto en archivos.
+ps: muestra los procesos en ejecución.
+kill: detiene un proceso en ejecución.
+chmod: cambia los permisos de acceso a archivos y directorios.
+sudo: permite al usuario realizar tareas con permisos de superusuario.
+tar: crea y extrae archivos comprimidos.
+ssh: inicia una sesión segura de shell remota en otro sistema.
+ping: comprueba la conectividad de red.
+
+Instalacion de Node.js
+Node.js es un entorno en tiempo de ejecución multiplataforma para la capa del servidor (en el lado del servidor) basado en JavaScript que es un entorno controlado por eventos diseñado para crear aplicaciones escalables, permitiéndote establecer y gestionar múltiples conexiones al mismo tiempo.
+Primero (ingresar contrasenha)
+sudo apt update
+sudo apt install nodejs
+node =v
+node -v
+sudo apt install npm
+para actualizer la version
+sudo npm install -g n
+luego instalamos la version con el comando
+sudo n latest 
+cerrar la Ventana Volver a abrir y ya estara la Nueva version 
+node -v
+
+Instalacion de Python
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+python3 --version
+
+Como instalar git?
+sudo apt update
+sudo apt-get install git-all
+git version
+
+como crear una llave ssh
+Vincular la llave SSH: contra: mika2002
+
+ssh-keygen -t ed25519 -C "mica.arevalos.18@gmail.com" (email vinculado con git) enter asignar una palabra clave que puedo recordar
+
+eval "$(ssh-agent -s)" ssh-add ~/.ssh/id_ed25519 ingreso la palabra clave ingresada anteriormente
+
+ahora agrego la llave a la cuenta de github, miro en al terminal cual es la llave publica:
+
+cat ~/.ssh/id_ed25519.pub copier toda la llave publica (cuidado con incluir espacios en blanco)
+
+En la pagina de github en perfil/configuraciones/SSH and GPG Keys/new SSH keys darle un titulo a la llave y pegar la llave publica en el campo key y luego add SSH Key
